@@ -63,7 +63,7 @@ var fromGene = function(gene, options) {
             h: input.prevTxId.toString('hex'),
             i: input.outputIndex
           }
-          let address = input.script.toAddress(bch.Networks.livenet).toString(bch.Address.CashAddrFormat).split(':')[1];
+          let address = input.script.toAddress(bch.Networks.livenet).toString();
           if (address && address.length > 0) {
             sender.a = address;
           }
@@ -102,7 +102,7 @@ var fromGene = function(gene, options) {
             v: output.satoshis,
             i: output_index
           }
-          let address = output.script.toAddress(bch.Networks.livenet).toString(bch.Address.CashAddrFormat).split(':')[1];
+          let address = output.script.toAddress(bch.Networks.livenet).toString();
           if (address && address.length > 0) {
             receiver.a = address;
           }
