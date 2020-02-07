@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "bitcoind-rpc": "^0.7.2",
-    "bitcore-lib-cash": "ZSLP/bitcore-lib-zcash",
+    "bitcore-lib-cash": "ZSLP/bitcore-lib-zcash#38c113838a28230b3d6cee76568f53173709774a",
     "dotenv": "^6.0.0"
   }
 }
